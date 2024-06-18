@@ -44,7 +44,7 @@ goto end
 
 :install
 copy "%~f0" "C:\Windows\Temp\SkipOOBE.cmd" /Y
-reg add "HKEY_LOCAL_MACHINE\SYSTEM\Setup" /v CmdLine /t REG_SZ /d "C:\Windows\Temp\SkipOOBE.cmd install" /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\Setup" /v CmdLine /t REG_SZ /d "C:\Windows\Temp\SkipOOBE.cmd execute" /f
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\Setup" /v SetupType /t REG_DWORD /d 1 /f
 
 net user administrator /active:yes
